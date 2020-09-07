@@ -146,6 +146,9 @@ extension HomeVC: UITableViewDataSource , SwipeTableViewCellDelegate {
         options.expansionStyle = .destructive
         return options
     }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
+    }
 }
 
 
